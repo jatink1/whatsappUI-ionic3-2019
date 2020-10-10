@@ -1,0 +1,109 @@
+<ion-header style="color: white">
+    
+ <ion-toolbar color="secondary">
+    
+      <ion-toolbar>
+      <ion-title>Whatsapp</ion-title>
+      <ion-buttons end style="padding-right:10px">
+          <button ion-button icon-only color="royal">
+              <ion-icon item-end name="search"></ion-icon>
+              
+          </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal">
+                <ion-icon ios="ios-more" md="md-more"></ion-icon>
+                
+            </button>
+          </ion-buttons>
+
+        
+    </ion-toolbar>
+      <ion-segment color="light">
+          
+        <ion-segment-button  >
+          <ion-icon name="camera" ></ion-icon>
+          <img src = "{{pic}}">
+        </ion-segment-button>
+      
+        <ion-segment-button >
+        Chat 
+          <ion-icon ></ion-icon>
+        </ion-segment-button>
+        
+        <ion-segment-button>
+        Status
+        </ion-segment-button>
+      
+        <ion-segment-button>
+          Calls
+        </ion-segment-button>
+
+      </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+
+  <ion-item (click)="next()">
+   <ion-avatar item-start>
+          <img src="assets/imgs/pix.png">
+        </ion-avatar>
+      <h3 >Contact 1</h3>
+    <p>Hello</p>
+    
+    
+  </ion-item>
+
+   
+  <ion-item (click)="cam()">
+      <ion-avatar item-start>
+        <img src="assets/imgs/pix.png">
+        </ion-avatar>
+        <h3>Contact 2</h3>
+        <p> ??</p>
+      
+    </ion-item>
+
+    
+  <ion-item>
+      <ion-avatar item-start>
+          <img src="assets/imgs/pix.png">
+        </ion-avatar>
+        <h3>Contact 3</h3>
+        <p>lol </p>
+     
+    </ion-item>
+
+    
+  <ion-item>
+      <ion-avatar item-start>
+          <img src="assets/imgs/pix.png">
+        </ion-avatar>
+        <h3>Contact 4</h3>
+        <p>Hwo aer ouy </p>
+      
+    </ion-item>
+
+    
+  <ion-item>
+      <ion-avatar item-start>
+          <img src="assets/imgs/pix.png">
+        </ion-avatar>
+        <h3>Contact 5</h3>
+        <p>Heyyy </p>
+     
+    </ion-item>
+
+    
+  <ion-item>
+      <ion-avatar item-start>
+          <img src="assets/imgs/pix.png">
+        </ion-avatar>
+        <h3>Contact 6</h3>
+        <p>Heyyy </p>
+     
+    </ion-item>
+</ion-content>
+

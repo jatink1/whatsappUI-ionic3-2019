@@ -1,0 +1,154 @@
+
+<ion-header>
+     <ion-toolbar color="secondary">
+       <ion-title >
+         Whatsapp  
+     </ion-title>
+     <ion-buttons end >
+       <button ion-button icon-only>
+         <ion-icon name="search" ></ion-icon>
+        </button>
+       
+    
+       <button ion-button icon-only >
+          <ion-icon  md="md-more"></ion-icon>
+           </button>
+          </ion-buttons>
+     
+    </ion-toolbar>
+  <ion-navbar color="secondary">
+    <ion-segment [(ngModel)]="page" color="light">
+         <ion-segment-button (click)="cam()">
+            <ion-icon name="camera"  ></ion-icon>
+         </ion-segment-button>
+    
+         <ion-segment-button  (click)="opentab(0)">
+             Chat
+         </ion-segment-button>
+  
+         <ion-segment-button (click)="opentab(1)">
+            Status
+         </ion-segment-button>
+  
+        <ion-segment-button (click)="opentab(2)">
+           Calls
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-slides #slider>
+  <!--First slide - Chat-->
+  <ion-slide>
+      <ion-item padding-right>
+          <ion-avatar item-start>
+            <img src="assets/imgs/pix.png">
+          </ion-avatar>
+          <h2 >Contact 1</h2>
+          <p>Message</p>
+          
+        </ion-item>
+        
+        <ion-item padding-right>
+            <ion-avatar item-start>
+              <img src="assets/imgs/pix.png">
+            </ion-avatar >
+            <h2>Contact 2</h2>
+            <p>Message</p>
+          </ion-item>
+
+          <ion-item padding-right>
+              <ion-avatar item-start>
+                <img src="assets/imgs/pix.png">
+              </ion-avatar>
+              <h2>Contact 3</h2>
+              <p>Message</p>
+            </ion-item>
+
+            <ion-item padding-right>
+                <ion-avatar item-start>
+                  <img src="assets/imgs/pix.png">
+                </ion-avatar>
+                <h2>Contact 4</h2>
+                <p>Message</p>
+              </ion-item>
+
+              <ion-item padding-right>
+                  <ion-avatar item-start>
+                    <img src="assets/imgs/pix.png">
+                  </ion-avatar>
+                  <h2>Contact 5</h2>
+                  <p>Message</p>
+                </ion-item>
+
+                <ion-item padding-right>
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/pix.png">
+                    </ion-avatar>
+                    <h2>Contact 6</h2>
+                    <p>Message</p>
+                  </ion-item>
+
+                  <ion-item padding-right>
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/pix.png">
+                      </ion-avatar>
+                      <h2>Contact 7</h2>
+                      <p>Message</p>
+                    </ion-item>
+       
+      
+  </ion-slide>
+<!--Second slide - Status-->
+  <ion-slide  >
+      <ion-item >
+          <ion-avatar item-start aria-setsize="80px">
+            
+            <img src="assets/imgs/dp1.png">
+            
+          </ion-avatar>
+          
+          <p><strong>My Status</strong></p>
+          <p style="font-size: 15px">Tap to add status update</p>
+        </ion-item>
+       <ion-item style="background-color: #f4f4f4">
+         <ion-label style="padding-top: 0px">
+           <p style="font-size: 15px">Status Updates</p>
+         </ion-label>
+       </ion-item>
+       <p>No Updates</p>
+     
+                
+      
+  </ion-slide>
+<!--Third slide - Calls-->
+  <ion-slide >
+      <ion-item padding-right>
+          <ion-avatar item-start>
+            <img src="assets/imgs/pix.png">
+          </ion-avatar>
+          <h2>Contact 1</h2>
+          <p>8 August, 5:28 pm</p>
+
+          <ion-icon ios="ios-call" md="md-call" item-end style="color: #075E54"></ion-icon>
+        
+        </ion-item>
+        
+        <ion-item padding-right>
+          <ion-avatar item-start>
+            <img src="assets/imgs/pix.png">
+          </ion-avatar>
+          <h2>Contact 2</h2>
+          <p>8 August, 5:58 pm</p>
+
+          <ion-icon ios="ios-videocam" md="md-videocam" item-end style="color: #075E54"></ion-icon>
+        
+        </ion-item>
+        
+  </ion-slide>
+</ion-slides>
+
+
+</ion-content>
